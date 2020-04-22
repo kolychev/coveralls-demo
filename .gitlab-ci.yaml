@@ -1,0 +1,10 @@
+stages:
+  - test
+
+default:
+  image: bellsoft/liberica-openjdk-alpine:13.0.2
+
+test:
+  stage: test
+  script:
+    - ./gradlew check jacocoTestReport coveralls --warning-mode all
