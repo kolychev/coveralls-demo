@@ -32,8 +32,10 @@ jacocoTestReport {
 	}
 }
 
-coveralls {
-	sourceDirs = subprojects.sourceSets.main.allSource.srcDirs.flatten()
-		.collect { it.absolutePath.replace(file(".").absolutePath + "/", "/") }
-	jacocoReportPath 'build/reports/jacoco/jacocoTestReport/jacocoTestReport.xml'
-}
+//coveralls {
+//	sourceDirs = subprojects.sourceSets.main.allSource.srcDirs.flatten()
+//		.collect {
+//			it.absolutePath.replace(file(".").absolutePath + "/", "")
+//		}
+//	jacocoReportPath 'build/reports/jacoco/test/jacocoTestReport.xml'
+//}
