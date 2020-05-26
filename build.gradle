@@ -35,5 +35,5 @@ jacocoTestReport {
 coveralls {
 	sourceDirs = subprojects.sourceSets.main.allSource.srcDirs.flatten()
 		.collect { it.absolutePath.replace(file(".").absolutePath + "/", "/") }
-	jacocoReportPath 'build/reports/jacoco/jacocoRootReport/jacocoRootReport.xml'
+	jacocoReportPath 'build/reports/jacoco/jacocoTestReport/jacocoTestReport.xml'
 }
