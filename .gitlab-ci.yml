@@ -7,7 +7,6 @@ default:
 test:
   stage: test
   script:
-    - export CI_NAME=gitlab
     - export CI_BRANCH=$CI_COMMIT_BRANCH
     - env
-    - ./gradlew check jacocoTestReport coveralls --warning-mode all
+    - ./gradlew check jacocoTestReport coveralls --warning-mode all -info

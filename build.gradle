@@ -32,9 +32,10 @@ jacocoTestReport {
 	}
 }
 
+/*
 coveralls {
-	sourceDirs = subprojects.sourceSets.main.allSource.srcDirs.flatten()
-		.collect {
-			it.absolutePath.replace(file(".").absolutePath + "/", "")
-		}
+	sourceDirs = subprojects.sourceSets.main.allSource.srcDirs.flatten().collect {
+		it.absolutePath.replace(file(".").absolutePath + "/", "")
+	}
 }
+*/
