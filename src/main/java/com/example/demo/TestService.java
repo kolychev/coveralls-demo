@@ -12,4 +12,8 @@ public class TestService {
       System.out.println("2");
     }
   }
+
+  public void testMethod2() {
+    System.out.println("3");
+  }
 }
