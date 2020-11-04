@@ -8,7 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class TestServiceTest {
 
   @Autowired
-  private TestService service;
+  private TestServiceImpl service;
 
   @Test
   void testMethod() {

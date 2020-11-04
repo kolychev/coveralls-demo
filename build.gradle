@@ -17,6 +17,9 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	runtimeOnly 'com.h2database:h2'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
@@ -32,10 +35,8 @@ jacocoTestReport {
 	}
 }
 
-/*
 coveralls {
 	sourceDirs = subprojects.sourceSets.main.allSource.srcDirs.flatten().collect {
 		it.absolutePath.replace(file(".").absolutePath + "/", "")
 	}
 }
-*/
