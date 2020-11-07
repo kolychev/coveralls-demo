@@ -2,11 +2,11 @@ stages:
   - test
 
 default:
-  image: bellsoft/liberica-openjdk-alpine:13.0.2
+  image: bellsoft/liberica-openjdk-alpine:15.0.1
 
 test:
   stage: test
   script:
     - export CI_BRANCH=$CI_COMMIT_BRANCH
     - env
-    - ./gradlew check jacocoTestReport coveralls --warning-mode all -info
+#    - ./gradlew check jacocoTestReport coveralls --warning-mode all -info
